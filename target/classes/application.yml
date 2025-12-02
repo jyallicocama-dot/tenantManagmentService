@@ -1,0 +1,12 @@
+server:
+  port: ${SERVER_PORT:5001}
+
+spring:
+  r2dbc:
+    url: r2dbc:postgresql://ep-old-shape-ady5hm5f-pooler.c-2.us-east-1.aws.neon.tech/neondb?sslmode=VERIFY_FULL
+    username:  ${DB_USERNAME:neondb_owner}
+    password:  ${DB_PASSWORD:npg_BqPyFXQ45YUS}
+
+  sql:
+    init:
+      mode: always
